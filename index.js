@@ -3,17 +3,16 @@
 const arrOfNames = ["Misha", "Grisha", "Vanya", "Sam", "Anton"];
 const arrOfSirnames = ["Mamedov", "Vasilkov", "Ninin", "Voronov", "Minin"];
 
-let randomPersons = [];
 
 function generateRandomPerson() {
         const age = getRandomNum(100);
         const firstname = arrOfNames[getRandomNum(arrOfNames.length)];
         const lastname = arrOfSirnames[getRandomNum(arrOfSirnames.length)];
 
-        randomPersons.push({ firstname, lastname, age })
+        return { firstname, lastname, age }
 }
-generateRandomPerson();
+let generatedPerson = generateRandomPerson();
 
 function getRandomNum(num) {
-    return parseInt(Math.random() * num);
+    return Math.floor(Math.random() * num);
 }
