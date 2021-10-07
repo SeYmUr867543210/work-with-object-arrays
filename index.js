@@ -8,11 +8,12 @@ let randomPersons = [];
 
 function generateRandomPerson() {
     for (let i = 0; i < personsAmount; i++) {
-        let age = getRandomNum();
-        let randomIdx = parseInt(Math.random() * personsAmount);
+        const age = getRandomNum();
+        const randomIdxForName =  Math.floor(Math.random() * personsAmount);
+        const randomIdxForLastName = Math.floor(Math.random * personsAmount);
 
-        let firstname = arrOfNames[randomIdx];
-        let lastname = arrOfSirnames[randomIdx];
+        const firstname = arrOfNames[randomIdxForName];
+        const lastname = arrOfSirnames[randomIdxForLastName];
 
         randomPersons.push({ firstname, lastname, age })
     }
