@@ -1,7 +1,7 @@
 // Напиши функцию, генерирующую объект со случайным именем, случайной фамилией и случайным возрастом. Имена и фамилии должны браться из массивов имён и фамилий соответственно. Возраст должен генерироваться случайным целым числом.
 
-const arrOfNames = ["Misha", "Grisha", "Vanya", "Sam", "Anton"];
-const arrOfSirnames = ["Mamedov", "Vasilkov", "Ninin", "Voronov", "Minin"];
+const firstNames = ["Misha", "Grisha", "Vanya", "Sam", "Anton"];
+const lastNames = ["Mamedov", "Vasilkov", "Ninin", "Voronov", "Minin"];
 
 
 function generateRandomPerson() {
